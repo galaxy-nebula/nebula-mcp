@@ -1,0 +1,26 @@
+<!--
+ * @author Bùi Trọng Hiếu
+ * @email kevinbui210191@gmail.com
+ * @desc BreadcrumbLink component - Clickable breadcrumb link with hover effect
+-->
+<script setup lang="ts">
+import { cn } from '@/lib/utils'
+
+defineOptions({
+  name: 'UiBreadcrumbLink',
+})
+
+const props = withDefaults(defineProps<{
+  class?: string
+  href?: string
+}>(), {})
+</script>
+
+<template>
+  <a
+    :href="props.href"
+    :class="cn('transition-colors hover:text-foreground', props.class)"
+  >
+    <slot />
+  </a>
+</template>

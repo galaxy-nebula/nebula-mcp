@@ -1,0 +1,34 @@
+<!--
+ * @author Bùi Trọng Hiếu
+ * @email kevinbui210191@gmail.com
+ * @desc Menubar component - Application menu bar with keyboard navigation
+-->
+<script setup lang="ts">
+import { type HTMLAttributes, computed } from 'vue'
+import { MenubarRoot, type MenubarRootProps } from 'radix-vue'
+import { cn } from '@/lib/utils'
+
+defineOptions({
+  name: 'UiMenubar',
+})
+
+interface Props extends MenubarRootProps {
+  class?: HTMLAttributes['class']
+}
+
+const props = defineProps<Props>()
+
+const delegatedProps = computed(() => {
+  const { class: _, ...delegated } = props
+  return delegated
+})
+</script>
+
+<template>
+  <MenubarRoot
+    :class="cn('flex h-10 items-center space-x-1 rounded-md border bg-background p-1', props.class)"
+    v-bind="delegatedProps"
+  >
+    <slot />
+  </MenubarRoot>
+</template>

@@ -1,0 +1,81 @@
+{
+  "$schema": "../schemas/component-manifest.schema.json",
+  "id": "dashboard-block",
+  "name": "Dashboard Block",
+  "category": "blocks",
+  "type": "block",
+  "status": "complete",
+  "description": "Full dashboard page with collapsible sidebar, stat cards, recent activity table, and navigation.",
+  "props": [],
+  "children": [],
+  "frameworks": {
+    "react": {
+      "status": "complete",
+      "files": [
+        "DashboardBlock.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "selector": "",
+      "exports": [
+        "DashboardBlock"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "props": []
+    },
+    "vue": {
+      "status": "complete",
+      "files": [
+        "DashboardBlock.vue",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "DashboardBlock"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "props": []
+    },
+    "angular": {
+      "status": "complete",
+      "files": [
+        "dashboard.component.ts",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "selector": "ui-dashboard",
+      "exports": [
+        "DashboardComponent"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "react-native": {
+      "status": "web-only",
+      "notes": "Mobile uses native tab navigation instead of dashboard block.",
+      "webOnly": true,
+      "props": []
+    },
+    "flutter": {
+      "status": "web-only",
+      "notes": "Flutter uses BottomNavigationBar + Scaffold instead.",
+      "webOnly": true,
+      "props": []
+    }
+  },
+  "a11y": {
+    "keyboard": [
+      "Sidebar toggle accessible via keyboard."
+    ],
+    "aria": [
+      "Content panel uses role=main, sidebar uses semantic <nav> element."
+    ]
+  },
+  "notes": {
+    "mobile": "Web-only component — use platform-native equivalents on mobile."
+  }
+}

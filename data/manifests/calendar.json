@@ -1,0 +1,53 @@
+{
+  "$schema": "../schemas/component-manifest.schema.json",
+  "id": "calendar",
+  "name": "Calendar",
+  "category": "form",
+  "status": "complete",
+  "description": "Full-featured date picker with month navigation and selection.",
+  "props": [],
+  "children": [],
+  "frameworks": {
+    "react": {
+      "status": "complete",
+      "files": ["Calendar.tsx", "index.ts"],
+      "entry": "index.ts",
+      "exports": ["Calendar"],
+      "dependencies": ["react-day-picker", "lucide-react"],
+      "props": []
+    },
+    "vue": {
+      "status": "complete",
+      "files": ["Calendar.vue", "index.ts"],
+      "entry": "index.ts",
+      "exports": ["Calendar"],
+      "dependencies": ["radix-vue", "lucide-vue-next"],
+      "props": []
+    },
+    "angular": {
+      "status": "complete",
+      "files": ["calendar.component.ts", "index.ts"],
+      "entry": "index.ts",
+      "exports": ["CalendarComponent"],
+      "dependencies": [],
+      "props": [],
+      "selector": "ui-calendar"
+    },
+    "react-native": {
+      "status": "complete",
+      "files": ["Calendar.tsx", "index.ts"],
+      "entry": "index.ts",
+      "exports": ["Calendar"],
+      "dependencies": [],
+      "props": []
+    },
+    "flutter": {
+      "status": "complete",
+      "files": ["calendar.dart", "index.dart"],
+      "entry": "index.dart",
+      "exports": ["GalaxyCalendar"],
+      "dependencies": [],
+      "props": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<!--
+ * @author Bùi Trọng Hiếu
+ * @email kevinbui210191@gmail.com
+ * @desc BreadcrumbList component - Ordered list container for breadcrumb items
+-->
+<script setup lang="ts">
+import { cn } from '@/lib/utils'
+
+defineOptions({
+  name: 'UiBreadcrumbList',
+})
+
+const props = withDefaults(defineProps<{
+  class?: string
+}>(), {})
+</script>
+
+<template>
+  <ol
+    :class="cn(
+      'flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5',
+      props.class
+    )"
+  >
+    <slot />
+  </ol>
+</template>

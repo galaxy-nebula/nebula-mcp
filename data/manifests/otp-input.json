@@ -1,0 +1,115 @@
+{
+  "$schema": "../schemas/component-manifest.schema.json",
+  "id": "otp-input",
+  "name": "OTP Input",
+  "category": "form",
+  "status": "complete",
+  "description": "One-time password input with auto-focus, paste support, and completion callback.",
+  "props": [],
+  "children": [],
+  "frameworks": {
+    "react": {
+      "status": "complete",
+      "files": [
+        "OTPInput.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "OTPInput",
+        "OTPInputProps"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "vue": {
+      "status": "complete",
+      "files": [
+        "OTPInput.vue",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "OTPInput"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "angular": {
+      "status": "complete",
+      "files": [
+        "otp-input.component.ts",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "selector": "ui-otp-input",
+      "exports": [
+        "OTPInputComponent"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "react-native": {
+      "status": "complete",
+      "files": [
+        "OTPInput.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "OTPInput",
+        "OTPInputProps"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "flutter": {
+      "status": "complete",
+      "files": [
+        "otp_input.dart",
+        "index.dart"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "GalaxyOTPInput"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "RN": {
+      "status": "complete",
+      "files": [
+        "OTPInput.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "OTPInput",
+        "OTPInputProps"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "F": {
+      "status": "complete",
+      "files": [
+        "otp_input.dart",
+        "index.dart"
+      ],
+      "entry": "index.dart",
+      "exports": [
+        "GalaxyOTPInput"
+      ],
+      "dependencies": [],
+      "props": []
+    }
+  },
+  "a11y": {
+    "keyboard": [
+      "Arrow left/right navigate between inputs."
+    ],
+    "aria": [
+      "Each input has aria-label='Digit N'."
+    ]
+  }
+}

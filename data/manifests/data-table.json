@@ -1,0 +1,76 @@
+{
+  "$schema": "../schemas/component-manifest.schema.json",
+  "id": "data-table",
+  "name": "Data Table",
+  "category": "data-display",
+  "status": "complete",
+  "description": "Sortable, filterable, paginated data table.",
+  "props": [],
+  "children": [],
+  "frameworks": {
+    "react": {
+      "status": "complete",
+      "files": [
+        "DataTable.tsx",
+        "types.ts",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "DataTable"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "vue": {
+      "status": "complete",
+      "files": [
+        "DataTable.vue",
+        "types.ts",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "DataTable"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "angular": {
+      "status": "complete",
+      "files": [
+        "index.ts",
+        "data-table.component.ts"
+      ],
+      "entry": "index.ts",
+      "selector": "ui-data-table",
+      "exports": [
+        "DataTableComponent",
+        "DataTableColumn"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "react-native": {
+      "status": "web-only",
+      "notes": "Mobile uses FlatList instead of table.",
+      "webOnly": true,
+      "props": []
+    },
+    "flutter": {
+      "status": "web-only",
+      "notes": "Flutter has DataTable built-in.",
+      "webOnly": true,
+      "props": []
+    }
+  },
+  "a11y": {
+    "keyboard": [],
+    "aria": [
+      "Table header uses cursor-pointer for sortable columns with sort indicator."
+    ]
+  },
+  "notes": {
+    "mobile": "Web-only component — use platform-native equivalents on mobile."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "../schemas/component-manifest.schema.json",
+  "id": "time-picker",
+  "name": "Time Picker",
+  "category": "form",
+  "status": "complete",
+  "description": "Hour/minute selection with 12h/24h format.",
+  "props": [],
+  "children": [],
+  "frameworks": {
+    "react": {
+      "status": "complete",
+      "files": [
+        "TimePicker.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "TimePicker"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "props": []
+    },
+    "vue": {
+      "status": "complete",
+      "files": [
+        "TimePicker.vue",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "TimePicker"
+      ],
+      "dependencies": [
+        "radix-vue",
+        "lucide-vue-next"
+      ],
+      "props": []
+    },
+    "angular": {
+      "status": "complete",
+      "files": [
+        "time-picker.component.ts",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "selector": "ui-time-picker",
+      "exports": [
+        "TimePickerComponent"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "react-native": {
+      "status": "complete",
+      "files": [
+        "TimePicker.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "TimePicker"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "flutter": {
+      "status": "complete",
+      "files": [
+        "time_picker.dart",
+        "index.dart"
+      ],
+      "entry": "index.dart",
+      "exports": [
+        "GalaxyTimePicker"
+      ],
+      "dependencies": [],
+      "props": []
+    }
+  }
+}

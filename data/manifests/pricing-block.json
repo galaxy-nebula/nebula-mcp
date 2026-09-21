@@ -1,0 +1,116 @@
+{
+  "$schema": "../schemas/component-manifest.schema.json",
+  "id": "pricing-block",
+  "name": "Pricing Block",
+  "category": "blocks",
+  "type": "block",
+  "status": "complete",
+  "description": "Pricing cards with tiers, feature lists, and highlighted plan.",
+  "props": [],
+  "children": [],
+  "frameworks": {
+    "react": {
+      "status": "complete",
+      "files": [
+        "PricingBlock.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "PricingBlock"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "vue": {
+      "status": "complete",
+      "files": [
+        "PricingBlock.vue",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "PricingBlock"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "angular": {
+      "status": "complete",
+      "files": [
+        "pricing.component.ts",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "selector": "ui-pricing",
+      "exports": [
+        "PricingBlockComponent",
+        "PricingTier"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "react-native": {
+      "status": "complete",
+      "files": [
+        "PricingBlock.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "PricingBlock",
+        "PricingBlockProps",
+        "PricingTier"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "flutter": {
+      "status": "complete",
+      "files": [
+        "pricing_block.dart",
+        "index.dart"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "GalaxyPricingBlock",
+        "GalaxyPricingTier"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "RN": {
+      "status": "complete",
+      "files": [
+        "PricingBlock.tsx",
+        "index.ts"
+      ],
+      "entry": "index.ts",
+      "exports": [
+        "PricingBlock",
+        "PricingBlockProps",
+        "PricingTier"
+      ],
+      "dependencies": [],
+      "props": []
+    },
+    "F": {
+      "status": "complete",
+      "files": [
+        "pricing_block.dart",
+        "index.dart"
+      ],
+      "entry": "index.dart",
+      "exports": [
+        "GalaxyPricingBlock",
+        "GalaxyPricingTier"
+      ],
+      "dependencies": [],
+      "props": []
+    }
+  },
+  "a11y": {
+    "keyboard": [],
+    "aria": []
+  }
+}
