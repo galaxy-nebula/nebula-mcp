@@ -3,7 +3,7 @@
   "name": "io.github.galaxy-nebula/nebula-mcp",
   "title": "Galaxy Nebula MCP Server",
   "description": "MCP server exposing Galaxy UI components — manifests, source code, and framework coverage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "https://github.com/galaxy-nebula/nebula-mcp",
     "source": "github"
@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "identifier": "@galaxy-stack/nebula-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       }
