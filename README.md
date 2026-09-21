@@ -71,6 +71,14 @@ https://nebula-mcp--galaxy-stack.run.tools
 1. Bump `version` in `package.json`
 2. Push to `main` — GitHub Actions workflow `publish-mcp.yml` builds contracts artifacts, bundles data, verifies the version is new, and publishes via **npm Trusted Publishing (OIDC)** — no NPM_TOKEN required
 3. Rebuild the MCPB bundle and run `smithery mcp publish` for Smithery
+4. Publish to the Official MCP Registry (org namespace requires a PAT — device-flow login cannot read org roles, see [registry#1468](https://github.com/modelcontextprotocol/registry/issues/1468)):
+
+   ```sh
+   # PAT needs read:org scope (classic) or Organization → Members → Read-only (fine-grained)
+   mcp-publisher login github --token <YOUR_PAT>   # requires mcp-publisher >= 1.8.1
+   mcp-publisher validate
+   mcp-publisher publish                            # → io.github.galaxy-nebula/nebula-mcp
+   ```
 
 ## License
 
