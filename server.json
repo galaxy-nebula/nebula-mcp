@@ -5,7 +5,7 @@
   "description": "MCP server exposing Galaxy UI components — manifests, source code, and framework coverage",
   "version": "1.0.0",
   "repository": {
-    "url": "https://github.com/galaxy-nebula/galaxy-design",
+    "url": "https://github.com/galaxy-nebula/nebula-mcp",
     "source": "github"
   },
   "packages": [
