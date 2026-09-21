@@ -1,10 +1,11 @@
-name: Publish to npm
+name: Publish MCP Server
 
 on:
-  release:
-    types: [published]
   push:
     branches: [main]
+    paths:
+      - 'packages/mcp-server/**'
+      - 'packages/contracts/**'
   workflow_dispatch:
 
 # Trusted Publishing (OIDC) — không cần NPM_TOKEN secret
@@ -13,7 +14,7 @@ permissions:
   id-token: write
 
 jobs:
-  publish:
+  publish-mcp:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,11 +30,21 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
+      - name: Build contracts artifacts (bundled registry data)
+        working-directory: packages/contracts
+        run: |
+          npm run generate
+          npm run build:artifact
+
+      - name: Build MCP server (bundles data + sources)
+        working-directory: packages/mcp-server
+        run: npm run build
+
       - name: Check version not already published
         run: |
-          VERSION=$(node -p "require('./package.json').version")
+          VERSION=$(node -p "require('./packages/mcp-server/package.json').version")
           if npm view "@galaxy-stack/nebula-mcp@$VERSION" version >/dev/null 2>&1; then
-            echo "Version $VERSION already published — skipping"
+            echo "Version $VERSION already published — skipping publish"
             echo "SHOULD_PUBLISH=false" >> "$GITHUB_ENV"
           else
             echo "Publishing new version $VERSION"
@@ -42,4 +53,5 @@ jobs:
 
       - name: Publish
         if: env.SHOULD_PUBLISH == 'true'
+        working-directory: packages/mcp-server
         run: npm publish --access public --provenance
