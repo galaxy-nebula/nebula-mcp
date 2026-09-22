@@ -52,6 +52,30 @@
         "flutter"
       ]
     },
+    "agent-activity": {
+      "status": "complete",
+      "available": [
+        "react"
+      ]
+    },
+    "chat-panel": {
+      "status": "complete",
+      "available": [
+        "react"
+      ]
+    },
+    "diff-review": {
+      "status": "complete",
+      "available": [
+        "react"
+      ]
+    },
+    "prompt-box": {
+      "status": "complete",
+      "available": [
+        "react"
+      ]
+    },
     "avatar": {
       "status": "complete",
       "available": [
@@ -130,6 +154,14 @@
         "angular",
         "react-native",
         "flutter"
+      ]
+    },
+    "carousel": {
+      "status": "complete",
+      "available": [
+        "react",
+        "vue",
+        "angular"
       ]
     },
     "checkbox": {
@@ -250,6 +282,14 @@
         "angular",
         "react-native",
         "flutter"
+      ]
+    },
+    "drawer": {
+      "status": "complete",
+      "available": [
+        "react",
+        "vue",
+        "angular"
       ]
     },
     "dropdown-menu": {
@@ -681,6 +721,10 @@
         "alert",
         "area-chart",
         "aspect-ratio",
+        "agent-activity",
+        "chat-panel",
+        "diff-review",
+        "prompt-box",
         "avatar",
         "badge",
         "bar-chart",
@@ -689,6 +733,7 @@
         "calendar-range",
         "calendar",
         "card",
+        "carousel",
         "checkbox",
         "collapsible",
         "combobox",
@@ -701,6 +746,7 @@
         "date-time-picker",
         "dialog",
         "donut-chart",
+        "drawer",
         "dropdown-menu",
         "empty",
         "form",
@@ -761,6 +807,7 @@
         "calendar-range",
         "calendar",
         "card",
+        "carousel",
         "checkbox",
         "collapsible",
         "combobox",
@@ -773,6 +820,7 @@
         "date-time-picker",
         "dialog",
         "donut-chart",
+        "drawer",
         "dropdown-menu",
         "empty",
         "form",
@@ -816,7 +864,12 @@
         "tooltip",
         "typography"
       ],
-      "missing": []
+      "missing": [
+        "agent-activity",
+        "chat-panel",
+        "diff-review",
+        "prompt-box"
+      ]
     },
     "angular": {
       "available": [
@@ -833,6 +886,7 @@
         "calendar-range",
         "calendar",
         "card",
+        "carousel",
         "checkbox",
         "collapsible",
         "combobox",
@@ -845,6 +899,7 @@
         "date-time-picker",
         "dialog",
         "donut-chart",
+        "drawer",
         "dropdown-menu",
         "empty",
         "form",
@@ -888,7 +943,12 @@
         "tooltip",
         "typography"
       ],
-      "missing": []
+      "missing": [
+        "agent-activity",
+        "chat-panel",
+        "diff-review",
+        "prompt-box"
+      ]
     },
     "react-native": {
       "available": [
@@ -960,7 +1020,14 @@
         "tooltip",
         "typography"
       ],
-      "missing": []
+      "missing": [
+        "agent-activity",
+        "chat-panel",
+        "diff-review",
+        "prompt-box",
+        "carousel",
+        "drawer"
+      ]
     },
     "flutter": {
       "available": [
@@ -1032,7 +1099,14 @@
         "tooltip",
         "typography"
       ],
-      "missing": []
+      "missing": [
+        "agent-activity",
+        "chat-panel",
+        "diff-review",
+        "prompt-box",
+        "carousel",
+        "drawer"
+      ]
     }
   }
 }

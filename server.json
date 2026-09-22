@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.galaxy-nebula/nebula-mcp",
   "title": "Galaxy Nebula MCP Server",
-  "description": "MCP server exposing Galaxy UI components — manifests, source code, and framework coverage",
-  "version": "1.0.1",
+  "description": "MCP server exposing Galaxy UI components \u2014 manifests, source code, and framework coverage",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/galaxy-nebula/nebula-mcp",
     "source": "github"
@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "identifier": "@galaxy-stack/nebula-mcp",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "transport": {
         "type": "stdio"
       }

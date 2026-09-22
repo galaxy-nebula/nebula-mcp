@@ -2,6 +2,18 @@
 
 All notable changes to **@galaxy-stack/nebula-mcp** (formerly `@galaxy-stack/design-mcp`) are documented here.
 
+## [1.0.2] — 2026-09-22
+
+### Added
+
+- **Assistant UI components** (phase 1, React): `chat-panel`, `agent-activity`, `diff-review`, `prompt-box` — manifests, sources, and registry entries bundled
+- 73 canonical manifests + 737 component sources in `dist/data`
+- Data refreshed from contracts artifact `0.1.0+1342d3f`
+
+### Fixed
+
+- Publish workflow for standalone flat repo layout (`data/` + `src/` instead of monorepo `packages/`)
+
 ## [1.0.0] — 2026-09-19
 
 Nebula milestone — first stable major release.

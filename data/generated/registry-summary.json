@@ -1135,6 +1135,54 @@
       ],
       "children": []
     },
+    "agent-activity": {
+      "name": "Agent Activity",
+      "type": "assistant",
+      "description": "Codex-style agent progress panel with task checklist, status badges, progress bar, and timestamped tool call log.",
+      "category": "assistant",
+      "status": "complete",
+      "frameworks": [
+        "react"
+      ],
+      "props": [],
+      "children": []
+    },
+    "chat-panel": {
+      "name": "Chat Panel",
+      "type": "assistant",
+      "description": "Copilot-style assistant side panel with message list, tool call cards, model badge, and composer with send/stop states.",
+      "category": "assistant",
+      "status": "complete",
+      "frameworks": [
+        "react"
+      ],
+      "props": [],
+      "children": []
+    },
+    "diff-review": {
+      "name": "Diff Review",
+      "type": "assistant",
+      "description": "AI code review panel with file-level accept/reject, per-file unified diff view, and summary stats for additions and deletions.",
+      "category": "assistant",
+      "status": "complete",
+      "frameworks": [
+        "react"
+      ],
+      "props": [],
+      "children": []
+    },
+    "prompt-box": {
+      "name": "Prompt Box",
+      "type": "assistant",
+      "description": "Standalone assistant composer with auto-resizing textarea, attachments row, model pill, slash-command hints, and send/stop states.",
+      "category": "assistant",
+      "status": "complete",
+      "frameworks": [
+        "react"
+      ],
+      "props": [],
+      "children": []
+    },
     "avatar": {
       "name": "avatar",
       "type": "other",
@@ -2442,6 +2490,20 @@
           "description": "Card elevation."
         }
       ],
+      "children": []
+    },
+    "carousel": {
+      "name": "Carousel",
+      "type": "data-display",
+      "description": "Carousel component - embla-based with prev/next controls.",
+      "category": "data-display",
+      "status": "complete",
+      "frameworks": [
+        "react",
+        "vue",
+        "angular"
+      ],
+      "props": [],
       "children": []
     },
     "checkbox": {
@@ -4213,6 +4275,20 @@
           "description": "Padding inside the chart container."
         }
       ],
+      "children": []
+    },
+    "drawer": {
+      "name": "Drawer",
+      "type": "overlay",
+      "description": "Mobile-first bottom sheet drawer.",
+      "category": "overlay",
+      "status": "complete",
+      "frameworks": [
+        "react",
+        "vue",
+        "angular"
+      ],
+      "props": [],
       "children": []
     },
     "dropdown-menu": {
