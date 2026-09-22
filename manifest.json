@@ -1,0 +1,37 @@
+{
+  "dxt_version": "0.1",
+  "name": "nebula-mcp",
+  "display_name": "Nebula MCP Server",
+  "version": "1.0.2",
+  "description": "Galaxy UI component library MCP server \u2014 exposes 73 component manifests, source code, and framework coverage for AI assistants.",
+  "author": {
+    "name": "Bui Trong Hieu (kevinbui)",
+    "url": "https://github.com/buikevin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galaxy-nebula/nebula-mcp"
+  },
+  "keywords": [
+    "galaxy-ui",
+    "components",
+    "vue",
+    "react",
+    "angular",
+    "react-native",
+    "flutter",
+    "tailwind"
+  ],
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/dist/index.js"
+      ]
+    }
+  },
+  "tools": []
+}
