@@ -65,6 +65,7 @@ function loadCoverage() {
 const TOOLS = [
   {
     name: 'list_components',
+    annotations: { title: 'list components', readOnlyHint: true },
     description: 'List all available Galaxy UI components with their availability per framework',
     inputSchema: {
       type: 'object',
@@ -79,6 +80,7 @@ const TOOLS = [
   },
   {
     name: 'get_component',
+    annotations: { title: 'get component', readOnlyHint: true },
     description: 'Get detailed metadata for a specific component including props, files, and per-framework status',
     inputSchema: {
       type: 'object',
@@ -90,6 +92,7 @@ const TOOLS = [
   },
   {
     name: 'get_component_source',
+    annotations: { title: 'get component source', readOnlyHint: true },
     description: 'Read the source code of a specific component file',
     inputSchema: {
       type: 'object',
@@ -106,11 +109,13 @@ const TOOLS = [
   },
   {
     name: 'get_coverage',
+    annotations: { title: 'get coverage', readOnlyHint: true },
     description: 'Get component availability coverage across all frameworks',
     inputSchema: { type: 'object', properties: {} },
   },
   {
     name: 'search_components',
+    annotations: { title: 'search components', readOnlyHint: true },
     description: 'Search components by name or description',
     inputSchema: {
       type: 'object',
