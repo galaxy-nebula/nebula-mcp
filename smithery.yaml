@@ -1,0 +1,11 @@
+# Smithery configuration — Galaxy Nebula MCP server (Galaxy UI component library)
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@galaxy-stack/nebula-mcp']
+    })
