@@ -1,6 +1,6 @@
 {
   "name": "@galaxy-stack/nebula-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "mcpName": "io.github.galaxy-nebula/nebula-mcp",
   "license": "MIT",
   "description": "MCP server exposing Galaxy Nebula components for AI assistants.",
